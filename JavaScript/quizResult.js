@@ -17,7 +17,7 @@ function quizResult(){
         result = "Your mental health is in a good state! Keep up the good work!";
     } 
     else if (totalScore <= 10){
-        result = "Your mental health is moderately well, but there is room for improvement. Consider: <tips>";
+        result = "Your mental health is moderately well, but there is room for improvement. Consider visiting the Zen Zone for resources and support.";
     } 
     else {
         result = "Your mental health needs attention. Consider visiting the Zen Zone for resources and support.";
