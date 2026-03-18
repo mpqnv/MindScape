@@ -1,0 +1,101 @@
+body {
+    background-color: #0d1616; 
+    color: #f0ffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.top-nav {
+    background-color: #008080;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #40E0D0;
+}
+
+.top-nav h1 {
+    margin: 0;
+    color: #40E0D0;
+    letter-spacing: 2px;
+}
+
+.back-btn {
+    color: #40E0D0;
+    text-decoration: none;
+    border: 1px solid #40E0D0;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.back-btn:hover {
+    background: #40E0D0;
+    color: #0d1616;
+}
+
+.welcome-area {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.boxes {
+    background: rgba(26, 42, 42, 0.8);
+    border: 1px solid rgba(64, 224, 208, 0.3);
+    border-radius: 20px;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.boxes:hover {
+    border-color: #40E0D0;
+    box-shadow: 0 0 30px rgba(64, 224, 208, 0.2);
+}
+
+.boxes h3 {
+    color: #40E0D0;
+    margin-top: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The Pulse Animation */
+.zen-pulse {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #40E0D0 0%, #008080 100%);
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px #40E0D0;
+    animation: pulseCircle 8s infinite ease-in-out;
+}
+
+@keyframes pulseCircle {
+    0%, 100% { transform: scale(1); opacity: 0.4; } 
+    50% { transform: scale(2.2); opacity: 1; }     
+}
+
+.box-content p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    color: #b0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 0.8rem;
+    color: #008080;
+}

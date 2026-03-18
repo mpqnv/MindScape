@@ -20,7 +20,7 @@ function quizResult(){
         result = "Your mental health is moderately well, but there is room for improvement. Consider: <tips>";
     } 
     else {
-        result = "Your mental health needs attention. Consider: <tips>";
+        result = "Your mental health needs attention. Consider visiting the Zen Zone for resources and support.";
     }
     document.getElementById("result-div").innerHTML = result;
 }
