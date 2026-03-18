@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/quiz.css">
     <title>Quiz</title>
+    
 </head>
 <body>
 <header class = "header">
     <h1>MindScape</h1>
     <nav class = "nav">
         <p>
-            <a href="#mentalstate.html">Mental State</a>
-            <a href="#sleep.html">Track your sleep</a>
-            <a href="#quiz.html">Try the mental health quiz</a>
+            <a href="mentalstate.html">Mental State</a>
+            <a href="sleep.html">Track your sleep</a>
+            <a href="quiz.html">Try the mental health quiz</a>
         </p>
     </nav>
  <main>
     <section class="quiz-div">
-      <form id="quizForm">
+      <form id="quiz-form">
 
         <div class="question">
           <h2>1. How many hours do you spend on screens each day?</h2>
@@ -35,7 +36,7 @@
         </div>
 
         <div class="question">
-          <h2>3. Do notifications interrupt your focus during the day?</h2>
+          <h2>3. Do mobile notifications interrupt your focus on your work during the day?</h2>
           <label class="option"><input type="radio" name="q3" value="1"> Not really</label>
           <label class="option"><input type="radio" name="q3" value="2"> Sometimes</label>
           <label class="option"><input type="radio" name="q3" value="3"> Very often</label>
@@ -54,5 +55,11 @@
           <label class="option"><input type="radio" name="q5" value="2"> A little tired</label>
           <label class="option"><input type="radio" name="q5" value="3"> Mentally drained or stressed</label>
         </div>
+        <div id="button-div">
+        <button type="button" onclick="quizResult()">Submit results</button>
+        </div>
+        <p id="result-div"></p>
+    </form>
+    <script src="../JavaScript/quizResult.js"></script>
 </body>
 </html>
