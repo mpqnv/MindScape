@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/index.css">
-    <title>Quiz</title>
-</head>
+    <title>MindScape</title>
+</head> 
 <body>
-    <header class = "header">
-        <h1>MindScape</h1>
-        <nav class = "nav">
-                <a href="mentalstate.html">Mental State</a>
-                <a href="sleep.html">Track your sleep</a>
-                <a href="quiz.html">Try the mental health quiz</a>
+    <div class="main-content">
+        <header class="top-nav">
+            <h1>MindScape</h1>
+            <img src="../Images/blank-profile-picture-973460_1280.webp" class="profilePicture" alt="Profile">
+        </header>
+
+        <section class="welcome-area">
+            <h2>Welcome to MindScape, your personal mental health hub!</h2>
+            <p>Embark on a journey of self-improvement</p>
+        </section>
+
+        <div class="container">
+            <div class="boxes">
+                <h3>Profile</h3>
+                <div class="box-content">
+                    <label for="name-input">Enter Name:</label>
+                    <input type="text" id="name-input" placeholder="Your Name">
+                    
+                    <label for="file-upload">Upload Photo:</label>
+                    <input type="file" id="file-upload">
+                    <button type="submit" class="save-btn">Save Profile</button>
+                </div>
+            </div>
+            
+            <div class="boxes">
+                <h3>Sleep Quality</h3>
+                <div class="box-content">
+                    <nav class="nav-links">
+                        <a href="../HtmlPages/sleep.html">Click for Sleep Tips</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="boxes">
+                <h3>Achievements</h3>
+                <div class="box-content">
+                    <p>0 Unlocked</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="nav-links">
+            <a href="../HtmlPages/about.html">About</a>
+            <a href="../HtmlPages/contact.html">Contact</a>
+            <a href="../HtmlPages/quiz.html">Take the Quiz</a>
         </nav>
-        <p class = "description">
-            <strong>Feeling down? Spending too much time on screens?</strong>
-             Learn how screen time affects your mental health, 
-            sleep, and focus, and develop healthier digital habits.
-            <br><strong><em>MindScape</em></strong> lets users track their mental state by using
-            their daily screen time, sleep length, and results from a quiz which evaluates their mental health.
-        </p>
-    </header>
-    <main>
-        
-    </main>
+
+            
+    </footer>
 </body>
 </html>

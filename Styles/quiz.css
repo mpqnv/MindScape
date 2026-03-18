@@ -1,19 +1,114 @@
-body{
-    font-family: 'Segoe UI';
-    background-color: aliceblue;
-    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d1616; 
+    color: #f0ffff;
 }
-h1{
+
+.top-nav {
+    background-color: #008080;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #40E0D0;
+}
+
+.top-nav h1 {
+    margin: 0;
+    color: #40E0D0;
+}
+
+.back-btn {
+    color: #40E0D0;
+    text-decoration: none;
+    border: 1px solid #40E0D0;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.welcome-area {
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 0;
+    padding: 30px 15px;
 }
-nav{
-    text-align: center;
-    font-size: 20px;
+
+.welcome-area h2 {
+    color: #40E0D0;
+    margin-bottom: 10px;
 }
-.quiz-div{
+
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
+}
+
+.quiz-card {
+    background: #1a2a2a;
+    border: 1px solid #40E0D0;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+}
+
+.question {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #008080;
+    padding-bottom: 15px;
+}
+
+.question h3 {
+    font-size: 1.1rem;
+    color: #40E0D0;
+    margin-bottom: 15px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.option:hover {
+    color: #40E0D0;
+}
+
+.option input {
+    margin-right: 10px;
+    accent-color: #40E0D0; 
+}
+
+#button-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #40E0D0;
+    color: #0d1616;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #f0ffff;
+    transform: scale(1.05);
+}
+
+#result-div {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #40E0D0;
 }
